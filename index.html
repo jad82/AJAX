@@ -2,25 +2,19 @@
 <html> 
 	<head> 
 		<meta charset="utf-8"> 
-		<title>Quote</title> 
+		<title>Wyszukiwarka krajów</title> 
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head> 
 	<body>
 		<main> 
-			<header> 
-				<h1>Random quote machine</h1>
-			</header> 
-			<div class="box"> 
-				<h2 class="quote"></h2> 
-				<h3 class="author"></h3> 
-			</div> 
-			<div> 
-				<button class="trigger"> Random quote </button> 
-				<a href="#" target="_blank" class="tweet">
-					<i class="fa fa-lg fa-twitter"></i> Tweet
-				</a> 
-			</div> 
+			<h1>Wyszukiwarka krajów</h1> 
+			<button id="search">Szukaj kraju</button> 
+			<input id="country-name" type="text" />
+			<h2>Lista krajów</h2>
+			<ul id="countries"> 
+				<li>Brak danych</li> 
+			</ul>
 		</main>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script> 
