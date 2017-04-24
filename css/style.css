@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:700');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-image: url('https://static.pexels.com/photos/34020/pexels-photo.jpg');
+	background-size: 100%;
+	align-items: center;
+	min-height: 100vh;
+	color: white;
+	font-size: 32px
+}
+.container h1 {
+	background-color: rgba(61, 16, 2, 0.8);
+	align-self: flex-end;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Arvo', serif;
+	letter-spacing: 7px;
+}
+.container, .results_list li:after, button {
+	text-transform: uppercase;
+}
+.details_list {
+	background-color: white;
+	padding: 15px;
+	margin-top: 20px;
+}
+.results_list, .details_list {
+	list-style-type: none;
+	background-color: rgba(184, 187, 193, 0.7);
+	font-size: 24px;
+	text-transform: none;
+	color: black;
+	
+}
+.results_list li:after {
+	content: '(More details)';
+	margin-left: 15px;
+	font-style: Arial;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: brown;
+	font-weight: 800;
+	cursor: pointer;
+}
+#country-search {
+	width: 200px;
+	height: 24px;
+	line-height: 50px;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding: 5px;
+}
+button#search, button#newSearch {
+	background-color: #3d1002;
+	padding: 15px;
+	color: white;
+	border: none;
+	letter-spacing: 3px;
+	margin-top: 30px;
+}

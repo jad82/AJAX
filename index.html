@@ -1,11 +1,37 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-		<meta charset="utf-8"> 
-		<title>Joke!</title> 
-	</head> 
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Wyszukiwarka krajów</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
 	<body>
-		
-		<script type="text/javascript" src="js/scripts.js"></script> 
+		<div class="container">
+			<h1>Wyszukiwarka krajów</h1>
+			<input id="country-search" type="text">
+			<button id="search">Znajdź kraj</button>
+			<div class="countries">
+				<h2>Lista wyników</h2>
+				<ul class="results_list">
+					
+				</ul>
+			</div>
+			<div>
+				<ul class ="details_list">
+					<li class="country">Państwo:</li>
+					<li class="capital">Stolica:</li>
+					<li class="population">Liczba mieszkańców:</li>
+					<li class="language">Język(i):</li>
+					<li class="land-area">Powierzchnia:</li>
+				</ul>
+			</div>
+			<div>
+				<button id="newSearch">Nowe wyszukiwanie</button>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
 	</body>
-</html> 
+</html>
