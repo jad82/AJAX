@@ -1,79 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Muli'); 
+@import url('https://fonts.googleapis.com/css?family=Arvo:700');
 
-body {
+* {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	background-color: #55acee;
 }
-main {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-color: white;
-margin: auto;
-width: 100%;
-height: 100vh;
-}
-header {
-	font-family: 'Muli', sans-serif;
-	font-size: 26px;
-	text-transform: uppercase;
-	text-align: center;
-	border: 1px solid white;
-	padding: 25px
-}
-.box {
-	color: black;
-	margin: 15px;
-	text-align: center
-}
-.quote {
-	font-family: 'Arvo', serif;
-	font-size: 30px;
-	color: white;
-}
-.quote:before {
-	font-family: FontAwesome;
-	content: "\f10e";
-	color: red;
-	font-size: 1.2em;
-	opacity: 0.4;
-	margin-right: 10px
-}
-.trigger, .tweet {
-	display: inline-block;
-	width: 250px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background-color: transparent;
-	border: 1px solid white;
-	align-items: center;
-	font-family: 'Muli', sans-serif;
-	color: white;
-	text-transform: uppercase;
-	font-weight: 700;
-	outline: none;
-	cursor: pointer;
-	margin-top: 25px;
-	font-size: 15px;
-	text-align: center;
-}
-.tweet {
-	text-decoration: none;
-}
-.trigger:hover, .tweet:hover {
-	transform: scale(1.1);
-	transition: 0.7s
-}
-.author {
-	color: white;
-	font-family: 'Dosis', sans-serif;
-	font-size: 1.2em;
-	letter-spacing: 2px
-}
-div {
+.container {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
+	box-sizing: border-box;
+	background-image: url('https://static.pexels.com/photos/34020/pexels-photo.jpg');
+	background-size: 100%;
+	align-items: center;
+	min-height: 100vh;
+	color: white;
+	font-size: 32px
+}
+.container h1 {
+	background-color: rgba(61, 16, 2, 0.8);
+	align-self: flex-end;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Arvo', serif;
+	letter-spacing: 7px;
+}
+.container, .results_list li:after, button {
+	text-transform: uppercase;
+}
+.details_list {
+	background-color: white;
+	padding: 15px;
+	margin-top: 20px;
+}
+.results_list, .details_list {
+	list-style-type: none;
+	background-color: rgba(184, 187, 193, 0.7);
+	font-size: 24px;
+	text-transform: none;
+	color: black;
+	
+}
+.results_list li:after {
+	content: '(More details)';
+	margin-left: 15px;
+	font-style: Arial;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: brown;
+	font-weight: 800;
+	cursor: pointer;
+}
+#country-search {
+	width: 200px;
+	height: 24px;
+	line-height: 50px;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding: 5px;
+}
+button#search, button#newSearch {
+	background-color: #3d1002;
+	padding: 15px;
+	color: white;
+	border: none;
+	letter-spacing: 3px;
+	margin-top: 30px;
 }
